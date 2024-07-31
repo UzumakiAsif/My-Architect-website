@@ -194,6 +194,7 @@ main > section{
     justify-items: center;
     gap: 24px;
   }
+
   .our-feature{
     margin: auto;
     /* margin-left: 20px; */
@@ -207,6 +208,11 @@ main > section{
     }
     .our-feature{
         margin-left:50px auto;
+    }
+    .facts-container, .sponsor-companies{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        justify-items: center;
     }
 
     
