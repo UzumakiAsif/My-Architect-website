@@ -7,7 +7,7 @@
   font-style: normal;
 }
 
-/* Shared styles */
+                      /* Shared styles */
 .flex{
     display: flex;
 }
@@ -45,6 +45,10 @@
     border: none;
     font-size: 1.25rem;
     font-weight: 600;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
 main{
@@ -114,9 +118,7 @@ main > section{
     margin-left: 130px;
     max-width: 530px;
 }
-.feature-title{
-    font-size: 2.8rem;
-}
+
 #quick-list{
     font-weight: 500;
 }
@@ -126,6 +128,37 @@ main > section{
 }
 
 /* features we love and enjoy section */
+
+/* facts section */
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fact-card{
+    border: 2px solid #FF900E;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 8px;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+.fact-description{
+    max-width: 540px;
+    margin-bottom: 100px;
+}
 
 
 
