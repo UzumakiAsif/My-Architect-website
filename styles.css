@@ -1,42 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
-                      /* Shared styles */
-.flex{
+/* Shared styles */
+.flex {
     display: flex;
 }
 
 /* colors */
-.dark-1{
+.dark-1 {
     color: #131313;
 }
-.dark-2{
+
+.dark-2 {
     color: #424242;
 }
 
-.dark-3{
+.dark-3 {
     color: #727272;
     font-size: 16px;
     font-weight: 400;
 }
-.light-gray{
+
+.light-gray {
     color: #727272;
 }
-.orange{
+
+.orange {
     color: #FF900E;
 }
 
-.bg-color{
+.bg-color {
     background-color: #FFF4E7;
 }
 
-.btn-primary{
+.btn-primary {
     /* color: #FF900E; */
     background-color: #FF900E;
     padding: 20px 25px;
@@ -46,46 +49,49 @@
     font-size: 1.25rem;
     font-weight: 600;
 }
-.section-title{
+
+.section-title {
     font-size: 2.8rem;
     font-weight: 700;
 }
 
-main{
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
-main > section{
+
+main>section {
     margin-top: 130px;
 }
 
 /* working on Nav bar */
 
-.brand{
+.brand {
     color: #131313;
     font-size: 3rem;
     font-weight: bold;
 
 }
 
-.nav-items{
+.nav-items {
     list-style: none;
     margin-right: 30px;
 }
 
-.nav-links{
+.nav-links {
     text-decoration: none;
     color: #424242;
     font-size: 18px;
     font-weight: 400;
 }
 
-.navbar{
+.navbar {
     justify-content: space-between;
     /* background-color: #FFF4E7; */
 }
 
-.navbar, .banner{
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -93,108 +99,137 @@ main > section{
 /* working on banner  */
 
 
-.banner-content{
+.banner-content {
     max-width: 860px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 50px  ;
+    margin-bottom: 50px;
 }
-.banner-title{
+
+.banner-title {
     font-weight: 700;
     font-size: 4rem;
 }
-.banner-image{
+
+.banner-image {
     width: 100%;
 }
 
 
 /* team and feature section */
-.teams-image{
+.teams-image {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-.our-feature{
+
+.our-feature {
     margin-left: 130px;
     max-width: 530px;
 }
 
-#quick-list{
+#quick-list {
     font-weight: 500;
 }
-#of-our, #features{
+
+#of-our,
+#features {
     font-weight: 700;
 
 }
 
 /* features we love and enjoy section */
-.features{
+.features {
     gap: 100px;
 }
-#feature-section-title{
+
+#feature-section-title {
     border-left: 5px solid #FF900E;
     padding-left: 20px;
-    
-    
+
+
 }
-.feature-card{
+
+.feature-card {
     padding: 30px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
     margin-bottom: 20px;
     border-radius: 8px;
 }
-.feature-card-title, .feature-card{
+
+.feature-card-title,
+.feature-card {
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 0px;
     margin-bottom: 0px;
-   
-   
+}
+/* experience badge */
+
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -90px;
+    margin-top: -80px;
+
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
 }
 
+
+
 /* facts section */
-.facts-container{
+.facts-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-.fact-card{
+
+.fact-card {
     border: 2px solid #FF900E;
     height: 15rem;
     width: 15rem;
     border-radius: 8px;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     text-align: center;
 }
-.fact-number{
+
+.fact-number {
     font-size: 2.8rem;
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 10px;
 }
-.fact-name{
+
+.fact-name {
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 10px;
 
 }
-.fact-description{
+
+.fact-description {
     max-width: 540px;
     margin-bottom: 100px;
 }
 
 /* sponsors styles */
-.sponsor-info{
+.sponsor-info {
     margin: 50px auto;
     max-width: 545px;
     text-align: center;
     margin-bottom: 50px;
 }
-.sponsor-companies{
-    display: grid;  
+
+.sponsor-companies {
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
-.sponsor-companies img{
+
+.sponsor-companies img {
     filter: grayscale(100%);
 }
 
@@ -203,40 +238,51 @@ main > section{
 
 
 
-            /* responsive layout */
+/* responsive layout */
 
 /* Making responsive for navbar and banner */
 @media screen and (max-width: 576px) {
-    .nav-links, .navbar, .teams{
+
+    .nav-links,
+    .navbar,
+    .teams {
         flex-direction: column;
     }
-  .teams-image, .facts-container, .sponsor-companies{
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .facts-container, .sponsor-companies{
-    justify-items: center;
-    gap: 24px;
-  }
 
-  .our-feature{
-    margin: auto;
-    /* margin-left: 20px; */
-  }
+    .teams-image,
+    .facts-container,
+    .sponsor-companies {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .facts-container,
+    .sponsor-companies {
+        justify-items: center;
+        gap: 24px;
+    }
+
+    .our-feature {
+        margin: auto;
+        /* margin-left: 20px; */
+    }
 }
 
 /* medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams{
+    .teams {
         flex-direction: column;
     }
-    .our-feature{
-        margin-left:50px auto;
+
+    .our-feature {
+        margin-left: 50px auto;
     }
-    .facts-container, .sponsor-companies{
+
+    .facts-container,
+    .sponsor-companies {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
     }
 
-    
+
 }
